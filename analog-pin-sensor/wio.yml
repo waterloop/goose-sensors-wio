@@ -1,0 +1,24 @@
+pkg:
+  name: analog-pin-sensor
+  description: "Generic analog pin sensor"
+  url: ""
+  version: 0.0.3
+  author: "Dmytro Shynkevych"
+  contributors: ["Dmytro Shynkevych"]
+  organization: "Waterloop"
+  keywords: []
+  license: "MIT"
+  platform: avr
+  framework:
+  - cosa
+  board:
+  - uno
+  compile_flags: []
+  ide: none
+targets:
+  default: tests
+  create:
+    tests:
+      board: uno
+      compile_flags: []
+dependencies: {}
