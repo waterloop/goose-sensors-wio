@@ -1,6 +1,6 @@
 pkg:
-  name: waterloop-pressure-sensor
-  description: "Pressure sensor used by Waterloop"
+  name: pressure-sensor
+  description: "Balluff pressure sensor driver used by Waterloop"
   url: ""
   version: 1.0.0
   author: "Dmytro Shynkevych"
@@ -22,5 +22,5 @@ targets:
       board: uno
       compile_flags: []
 dependencies:
-    analog-pin-sensor:
-        version: 0.0.3
+  analog-pin-sensor:
+    version: 0.0.3
