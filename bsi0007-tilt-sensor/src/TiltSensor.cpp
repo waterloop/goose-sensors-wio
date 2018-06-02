@@ -9,5 +9,5 @@ using namespace wlp;
 #define DEGREES_PER_VOLT 360.0 / (0.016 * RSHUNT)
 
 double TiltSensor::read_value() {
-    return (read_voltage() - CENTER_OFFSET) * DEGREES_PER_VOLT;
+    return read_voltage_scaled(DEGREES_PER_VOLT, CENTER_OFFSET);
 }
