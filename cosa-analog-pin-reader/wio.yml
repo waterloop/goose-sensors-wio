@@ -2,7 +2,7 @@ pkg:
   name: cosa-analog-pin-reader
   description: "Generic analog pin reader for the Cosa framework"
   url: ""
-  version: 0.0.2
+  version: 0.0.3
   author: "Dmytro Shynkevych"
   contributors: ["Dmytro Shynkevych"]
   organization: "Waterloop"
