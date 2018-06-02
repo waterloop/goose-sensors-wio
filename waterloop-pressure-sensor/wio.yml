@@ -1,0 +1,26 @@
+pkg:
+  name: waterloop-pressure-sensor
+  description: "Pressure sensor used by Waterloop"
+  url: ""
+  version: 1.0.0
+  author: "Dmytro Shynkevych"
+  contributors: ["Dmytro Shynkevych"]
+  organization: "Waterloop"
+  keywords: []
+  license: "MIT"
+  platform: avr
+  framework:
+  - cosa
+  board:
+  - uno
+  compile_flags: []
+  ide: none
+targets:
+  default: tests
+  create:
+    tests:
+      board: uno
+      compile_flags: []
+dependencies:
+    analog-pin-sensor:
+        version: 0.0.3
