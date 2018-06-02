@@ -11,7 +11,7 @@ void setup() {
 }
 
 void loop() {
-    static auto sensor = PressureSensor(Board::A0);
+    static auto sensor = BSP008Z::PressureSensor(Board::A0);
 
     trace << "\r";  // Move cursor to start of line
     trace << sensor.read_value() << " bar";

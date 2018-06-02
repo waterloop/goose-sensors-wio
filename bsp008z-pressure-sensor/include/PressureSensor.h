@@ -1,15 +1,17 @@
-#ifndef GOOSE_SENSORS_PRESSURE_SENSOR_H
-#define GOOSE_SENSORS_PRESSURE_SENSOR_H
+#ifndef BSP008Z_PRESSURE_SENSOR_H
+#define BSP008Z_PRESSURE_SENSOR_H
 
-#include <AnalogPinSensor.h>
+#include <AnalogPinReader.h>
 
 namespace wlp {
-    class PressureSensor: public AnalogPinSensor {
-    public:
-        explicit PressureSensor(Board::AnalogPin analog_pin)
-        : AnalogPinSensor(analog_pin) {};
-        double read_value();
-    };
+    namespace BSP008Z {
+        class PressureSensor: public AnalogPinReader {
+        public:
+            explicit PressureSensor(Board::AnalogPin analog_pin)
+            : AnalogPinReader(analog_pin) {};
+            double read_value();
+        };
+    }
 }
 
-#endif //GOOSE_SENSORS_PRESSURE_SENSOR_H
+#endif // BSP008Z_PRESSURE_SENSOR_H
