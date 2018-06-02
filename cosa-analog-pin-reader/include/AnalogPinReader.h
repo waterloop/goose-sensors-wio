@@ -13,6 +13,7 @@ namespace wlp {
             : analog_pin(analog_pin) {}
         void begin();
         void sleep();
+        double read_value();
     protected:
         double read_voltage_raw();
         double read_voltage_scaled(double scale, double bias = 0.0);

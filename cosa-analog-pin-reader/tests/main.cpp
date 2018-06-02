@@ -1,7 +1,7 @@
 #include <Cosa/Trace.hh>
 #include <Cosa/UART.hh>
 
-#include "AnalogPinSensor.h"
+#include "AnalogPinReader.h"
 
 using namespace wlp;
 
@@ -11,9 +11,9 @@ void setup() {
 }
 
 void loop() {
-    static auto sensor = AnalogPinReader(Board::A0);
+    static auto reader = AnalogPinReader(Board::A0);
 
     trace << "\r";  // Move cursor to start of line
-    trace << sensor.read_value() << " V";
+    trace << reader.read_value() << " V";
     delay(100);
 }
