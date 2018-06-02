@@ -11,7 +11,7 @@ void setup() {
 }
 
 void loop() {
-    static auto sensor = TiltSensor(Board::A0);
+    static auto sensor = BSI0007::TiltSensor(Board::A0);
 
     trace << "\r";  // Move cursor to start of line
     trace << sensor.read_value() << "° tilt";

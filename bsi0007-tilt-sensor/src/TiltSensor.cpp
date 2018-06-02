@@ -1,6 +1,6 @@
 #include "TiltSensor.h"
 
-using namespace wlp;
+using namespace wlp::BSI0007;
 
 #define RSHUNT 250.0 // in Ohms
 // 0 degrees at current Ic = 4mA + (20mA - 4mA)/2, voltage Vc = Ic * Rshunt
