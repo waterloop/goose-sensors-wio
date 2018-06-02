@@ -11,7 +11,7 @@ void setup() {
 }
 
 void loop() {
-    static auto sensor = AnalogPinSensor(Board::A0);
+    static auto sensor = AnalogPinReader(Board::A0);
 
     trace << "\r";  // Move cursor to start of line
     trace << sensor.read_value() << " V";

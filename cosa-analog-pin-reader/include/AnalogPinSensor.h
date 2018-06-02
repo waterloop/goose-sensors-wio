@@ -1,21 +1,15 @@
-#ifndef GOOSE_SENSORS_ANALOGPINSENSOR_H
-#define GOOSE_SENSORS_ANALOGPINSENSOR_H
+#ifndef COSA_ANALOG_PIN_READER_H
+#define COSA_ANALOG_PIN_READER_H
 
 #include <Cosa/AnalogPin.hh>
-
-using ::Board;
-
-#ifdef MOCK
-#define AnalogPin MockAnalogPin
-#endif
 
 #define VOLTAGE_SCALE 5.0/1023.0  // 0..1023 as returned by sample() -> 0..5 V
 #define VOLTAGE_EPSILON 0.005  // Reading precision, in V
 
 namespace wlp {
-    class AnalogPinSensor {
+    class AnalogPinReader {
     public:
-        explicit AnalogPinSensor(AnalogPin analog_pin)
+        explicit AnalogPinReader(AnalogPin analog_pin)
             : analog_pin(analog_pin) {}
         void begin();
         void sleep();
@@ -27,4 +21,4 @@ namespace wlp {
     };
 }
 
-#endif // GOOSE_SENSORS_ANALOGPINSENSOR_H
+#endif // COSA_ANALOG_PIN_READER_H

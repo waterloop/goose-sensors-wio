@@ -1,6 +1,6 @@
 pkg:
-  name: analog-pin-sensor
-  description: "Generic analog pin sensor"
+  name: cosa-analog-pin-reader
+  description: "Generic analog pin reader for the Cosa framework"
   url: ""
   version: 0.0.3
   author: "Dmytro Shynkevych"
@@ -12,7 +12,7 @@ pkg:
   framework:
   - cosa
   board:
-  - uno
+  - ALL
   compile_flags: []
   ide: none
 targets:
