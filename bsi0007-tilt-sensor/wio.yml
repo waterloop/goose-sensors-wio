@@ -1,6 +1,6 @@
 pkg:
-  name: tilt-sensor
-  description: "Balluff tilt sensor driver used by Waterloop"
+  name: bsi0007-tilt-sensor
+  description: "Balluff BSI-0007 tilt sensor driver used by Waterloop"
   url: ""
   version: 1.0.0
   author: "Dmytro Shynkevych"
@@ -12,7 +12,7 @@ pkg:
   framework:
   - cosa
   board:
-  - uno
+  - ALL
   compile_flags: []
   ide: none
 targets:
