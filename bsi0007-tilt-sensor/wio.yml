@@ -1,0 +1,26 @@
+pkg:
+  name: bsi0007-tilt-sensor
+  description: "Balluff BSI-0007 tilt sensor driver used by Waterloop"
+  url: ""
+  version: 1.0.0
+  author: "Dmytro Shynkevych"
+  contributors: ["Dmytro Shynkevych"]
+  organization: "Waterloop"
+  keywords: []
+  license: "MIT"
+  platform: avr
+  framework:
+  - cosa
+  board:
+  - ALL
+  compile_flags: []
+  ide: none
+targets:
+  default: tests
+  create:
+    tests:
+      board: uno
+      compile_flags: []
+dependencies:
+  cosa-analog-pin-reader:
+    version: 0.0.2
