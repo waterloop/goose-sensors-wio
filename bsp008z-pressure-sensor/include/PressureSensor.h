@@ -9,7 +9,7 @@ namespace wlp {
         public:
             explicit PressureSensor(Board::AnalogPin analog_pin)
             : AnalogPinReader(analog_pin) {};
-            virtual double read_value() override;
+            double read_value() override;
         };
     }
 }
