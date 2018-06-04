@@ -9,7 +9,7 @@ namespace wlp {
         public:
             explicit TiltSensor(Board::AnalogPin analog_pin)
             : AnalogPinReader(analog_pin) {};
-            virtual double read_value() override;
+            double read_value() override;
         };
     }
 }
