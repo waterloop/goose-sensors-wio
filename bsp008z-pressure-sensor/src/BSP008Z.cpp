@@ -1,4 +1,4 @@
-#include "PressureSensor.h"
+#include "pressure/BSP008Z.h"
 
 using namespace wlp::BSP008Z;
 

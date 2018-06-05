@@ -1,7 +1,7 @@
 #include <Cosa/Trace.hh>
 #include <Cosa/UART.hh>
 
-#include "TiltSensor.h"
+#include "tilt/BSI0007.h"
 
 using namespace wlp;
 
