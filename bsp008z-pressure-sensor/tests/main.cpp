@@ -1,7 +1,7 @@
 #include <Cosa/Trace.hh>
 #include <Cosa/UART.hh>
 
-#include "BSP008Z.h"
+#include "pressure/BSP008Z.h"
 
 using namespace wlp;
 

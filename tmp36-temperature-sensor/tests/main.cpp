@@ -1,7 +1,7 @@
 #include <Cosa/Trace.hh>
 #include <Cosa/UART.hh>
 
-#include "TMP36.h"
+#include "temperature/TMP36.h"
 
 using namespace wlp;
 
