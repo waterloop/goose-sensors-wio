@@ -5,4 +5,7 @@ install:
     - sudo apt-get install -qq gcc-avr avr-libc avrdude -y
     - npm install -g wio
 script:
-    - for module in $(ls -d */); do wio build; done
+    - for module in $(ls -d */);
+      do cd $module;
+      wio build;
+      done
