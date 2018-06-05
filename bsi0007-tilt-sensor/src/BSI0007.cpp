@@ -1,4 +1,4 @@
-#include "TiltSensor.h"
+#include "BSI0007.h"
 
 using namespace wlp::BSI0007;
 
