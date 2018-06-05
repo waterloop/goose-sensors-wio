@@ -8,8 +8,8 @@ script:
     - set -e # Fail on first error
     - for module in $(ls -d */);
       do cd $module;
-      wio update pkg . >/dev/null;
-      wio pac get >/dev/null;
+      wio update pkg .;
+      wio pac get;
       wio build;
       cd ..;
       done
