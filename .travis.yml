@@ -7,7 +7,7 @@ install:
 script:
     - for module in $(ls -d */);
       do cd $module;
-      wio update .;
+      wio update pkg .;
       wio pac get;
       wio build;
       cd ..;
