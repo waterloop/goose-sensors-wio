@@ -1,0 +1,10 @@
+dist: trusty
+before-install:
+    - sudo apt-get update -qq
+install:
+    - sudo apt-get install -qq gcc-avr avr-libc avrdude -y
+    - npm install -g wio
+script:
+    - for module in $(ls -d */)
+    - do wio build
+    - end
