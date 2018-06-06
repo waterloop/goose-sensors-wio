@@ -1,10 +1,10 @@
 pkg:
   name: tmp36-temperature-sensor
   description: "TMP36 temperature sensor driver used by Waterloop"
-  url: ""
+  url: "https://github.com/waterloop/goose-sensors-wio/tree/master/tmp36-temperature-sensor"
   version: 1.0.0
-  author: "Dmytro Shynkevych"
-  contributors: ["Dmytro Shynkevych", "Quinton Lucyk"]
+  author: "Dmytro Shynkevych <dm.shynk@gmail.com> (https://github.com/hermord)"
+  contributors: ["Quinton Lucyk (https://github.com/quintonlucyk)"]
   organization: "Waterloop"
   keywords: []
   license: "MIT"
@@ -23,4 +23,4 @@ targets:
       compile_flags: []
 dependencies:
   cosa-analog-pin-reader:
-    version: 0.0.3
+    version: 1.0.0
