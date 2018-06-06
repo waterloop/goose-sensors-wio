@@ -20,5 +20,6 @@ targets:
   create:
     tests:
       board: uno
-      compile_flags: []
+      pkg_compile_flags: []
+      target_compile_flags: []
 dependencies: {}
