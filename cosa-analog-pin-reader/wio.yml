@@ -2,7 +2,7 @@ pkg:
   name: cosa-analog-pin-reader
   description: "Generic analog pin reader for the Cosa framework"
   url: "https://github.com/waterloop/goose-sensors-wio/tree/master/cosa-analog-pin-reader"
-  version: 1.0.0
+  version: 0.0.4
   author: "Dmytro Shynkevych <dm.shynk@gmail.com> (https://github.com/hermord)"
   contributors: [""]
   organization: "Waterloop"
