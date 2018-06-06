@@ -1,10 +1,10 @@
 pkg:
   name: bsp008z-pressure-sensor
   description: "Balluff BSP008Z pressure sensor driver used by Waterloop"
-  url: ""
-  version: 1.0.0
-  author: "Dmytro Shynkevych"
-  contributors: ["Dmytro Shynkevych"]
+  repository: "https://github.com/waterloop/goose-sensors-wio/tree/master/bsp008z-pressure-sensor"
+  version: 0.0.1
+  author: "Dmytro Shynkevych <dm.shynk@gmail.com> (https://github.com/hermord)"
+  contributors: []
   organization: "Waterloop"
   keywords: []
   license: "MIT"
@@ -20,7 +20,8 @@ targets:
   create:
     tests:
       board: uno
-      compile_flags: []
+      pkg_compile_flags: []
+      target_compile_flags: []
 dependencies:
   cosa-analog-pin-reader:
-    version: 0.0.2
+    version: 0.0.4
