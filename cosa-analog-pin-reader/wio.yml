@@ -1,25 +1,27 @@
-pkg:
+type: pkg
+
+project:
   name: cosa-analog-pin-reader
   description: "Generic analog pin reader for the Cosa framework"
   url: "https://github.com/waterloop/goose-sensors-wio/tree/master/cosa-analog-pin-reader"
-  version: 0.0.4
+  version: 0.0.5
   author: "Dmytro Shynkevych <dm.shynk@gmail.com> (https://github.com/hermord)"
   contributors: [""]
   organization: "Waterloop"
   keywords: []
   license: "MIT"
   platform: avr
-  framework:
-  - cosa
-  board:
-  - ALL
-  compile_flags: []
-  ide: none
+  keywords:
+  - wio
+  - pkg
+  compile_options:
+    wio_version: 0.9.0
+    default_target: tests
+
 targets:
-  default: tests
-  create:
-    tests:
-      board: uno
-      pkg_compile_flags: []
-      target_compile_flags: []
-dependencies: {}
+  tests:
+    src: tests
+    platform: avr
+    framework: cosa
+    board: mega2560
+
